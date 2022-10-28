@@ -11,8 +11,17 @@ html{
 
 :root{
     --main-color:#db9ddd;
+    --secondary-color: #d35bd7; 
     --bg-grey: #0000001a;
     --bg-white:#fff;
+}
+
+.nav-link:hover{
+    color: var(--main-color) !important;
+}
+
+.nav-link.active{
+    color: #000;
 }
 
 .bloque{
@@ -347,6 +356,7 @@ header{
         font-size: 0.8rem;
         padding-inline: 10px !important;
     }
+
 
     .botones{
         padding-top: 10px !important;
