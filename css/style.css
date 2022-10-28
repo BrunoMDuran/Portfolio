@@ -19,7 +19,7 @@ html{
     padding-block: 5rem;
 }
 .bloque-portada{
-    padding-block: 2rem;
+    padding-top: 0.8rem;
 }
 
 header{
@@ -48,6 +48,7 @@ header{
 .titulo h2{
     font-size: 7rem;
     font-weight: 700;
+    
 }
 
 .titulo h5{
@@ -57,7 +58,7 @@ header{
 
 .titulo h2 span{
     padding: 5px;
-    color: var(--bg-grey);
+    color: #3a3a3ac7;
 }
 
 .foto-perfil{
@@ -135,7 +136,7 @@ header{
 
 .vete iframe{
     width: 100%;
-    height: 500px;
+    height: 65vh;
 }
 
 .site{
@@ -240,7 +241,7 @@ header{
 @media screen and (max-width: 1200px){
 
     .foto-perfil{
-        width: 400px;
+        width: 100%;
     }
 
     .escribime{
@@ -268,6 +269,17 @@ header{
         padding-top: 1.5rem !important;
     }
 
+    .bloque{
+        padding-block: 3rem;
+    }
+
+    .dev{
+        text-shadow: 0 -20px 0 #00000046, 0 -45px 0 #00000029,0 -70px 0 #00000011 ;
+    }
+    .dev span{ 
+        text-shadow: none;
+    }
+
     .titulo h3{
         font-size: 2.5rem;
         font-weight: 300;
@@ -282,12 +294,7 @@ header{
     .titulo h5{
         font-size: 1.2rem;
     }
-
-    .foto-perfil{
-        margin-top: 0 !important;
-        width: 450px;
-    }
-   
+ 
     .escribime{
         background-position-x: 225px;
     }
@@ -296,9 +303,7 @@ header{
         font-size: 1rem;
     }
 
-    .flecha{
-        padding-top: 15rem !important;
-    }
+
 }
     
 
@@ -312,13 +317,13 @@ header{
 
     .titulo-portada h3{
         margin-bottom: 0 !important;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .titulo-portada h2{
         margin: 0 !important;
         padding: 0 !important;
-        font-size: 3rem;
+        font-size: 2.5rem;
 
     }
 
@@ -328,31 +333,23 @@ header{
     }
 
     .foto-perfil{
-        width: 300px;
+        width: 100%;
         padding-left: 0;
-    }
-
-    .foto{
-        padding-left: 0;
-        padding-top: 4.5rem;
     }
 
     .titulo{
         align-items: start !important;
     }
 
-    .botones button{
+    .botones a{
         padding: 5px;
         justify-content: center;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        padding-inline: 10px !important;
     }
 
     .botones{
         padding-top: 10px !important;
-    }
-
-    .botones a{
-        padding-inline: 10px !important;
     }
 
     .view{
@@ -370,7 +367,39 @@ header{
     }
 
     .flecha{
-        padding-top: 4rem !important;
+        padding-top: 1rem !important;
     }
+}
+
+
+@media screen and (max-width: 390px){
+
+
+    .flecha{
+        padding-top: 4.25rem !important;
+    }
+
+    .foto{
+        padding-top: 2rem;
+    }
+
+    .titulo-portada h3{
+        font-size: 1.25rem;
+    }
+
+    .titulo-portada h2{
+        font-size: 2.5rem;
+
+    }
+
+    .titulo-portada h5{
+        font-size: 0.75rem;
+    }
+
+    .vete{
+        width: 100%;
+        margin: 0 !important;
+    }
+
 }
 
